@@ -2,16 +2,18 @@
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
-    max-width: 1200px;
 
   }
-  
+body {
+    margin: auto;
+    max-width: 1200px;
+}
 main {
     display: flex;
     flex-flow: column nowrap;
   }
 
-/* Caixa 1 */  
+  /* Caixa 1 */  
   .container1 {
     display: flex;
     flex-flow: column nowrap;
@@ -22,6 +24,7 @@ main {
       display: flex;
       flex-flow: row nowrap;
       background-color: DarkSlateBlue;
+      margin-bottom: 5px;
       align-items: center;
       }
   
@@ -37,6 +40,7 @@ main {
   
       .caixa2 {
       background: chocolate;
+      margin-top: 5px;
       }
   
           .caixa2_item {
@@ -85,12 +89,12 @@ main {
     justify-content: center;
   }
   
-      .container3_item {
+      .caixa4 {
       background: SandyBrown;
       flex: 1 1 auto;
       }
-  
-  
+   
+      
   /* Mida Tablet */
   @media all and (max-width: 800px) {
     .container2 {
