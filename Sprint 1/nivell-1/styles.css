@@ -1,45 +1,111 @@
-* { 
-    margin: 0;
-    padding: 0;
+* {
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
-}
 
-html {
-    height: 100%;
-    /* max-width:1200px */
-}
-body {
-	color:white;
-    min-height: 100vh;
-    max-width:1200px;
-    margin: 0 auto;
-}
-
-section {
-	background-color:black;
-    margin:5px;
-    padding:10px;
-}
-
-article {
-	background-color:gray;
-    margin:5px;
-    padding:10px;
-}
-
-div {
-	background-color:orangered;
-    margin:5px;
-    padding:10px;
-    display: inline-flex;
-}
-
-#naranja {
-    background-color:orange;
-}
-
-#amarillo {
-    background-color:rgb(240, 236, 10);
-}
-
-
+  }
+  
+main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgb(36, 36, 36);
+  }
+  
+      .caixa1 {
+      display: flex;
+      flex-flow: row nowrap;
+      background-color: DarkSlateBlue;
+      align-items: center;
+      }
+  
+          .caixa1_item1 {
+          background: LightPink;
+          flex: 1 1 auto;
+          }
+  
+          .caixa1_item2 {
+          background: LightPink;
+          flex: 5 1 auto;
+          }
+  
+      .caixa2 {
+      background: chocolate;
+      }
+  
+          .caixa2_item {
+          background: sandybrown;
+          }
+  
+  
+  .container2 {
+    background: black;
+    display: flex;
+  }
+  
+      .caixa3 {
+      display: flex;
+      background: DarkSlateBlue;
+      flex: 2 1 auto;
+      flex-flow: row wrap;
+      }
+  
+          .caixa3_item1 {
+          display: flex;
+          background: LightBlue;
+          flex: 1 1 40%;
+          }
+  
+          .caixa3_item2 {
+          display: flex;
+          background: powderblue;
+          flex: 1 1 100%;
+          }
+  
+      .caixa4 {
+      background: Salmon;
+      flex: 1 1 auto;
+      flex-flow: column wrap;
+      }
+  
+          .caixa4_item {
+          background: peachpuff;
+          }
+  
+  .container3 {
+    background: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+      .container3_item {
+      background: SandyBrown;
+      flex: 1 1 auto;
+      }
+  
+  
+  /* Mida Tablet */
+  @media all and (max-width: 800px) {
+    .container2 {
+      flex-direction: column;
+      background: Khaki;
+    }
+  }
+  
+  /* Mida Smartphone */
+  @media all and (max-width: 500px) {
+    .caixa1 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .caixa3 {
+      flex-direction: column;
+    }
+  
+  }
+  
