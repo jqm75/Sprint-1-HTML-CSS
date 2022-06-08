@@ -1,0 +1,39 @@
+* {
+
+}
+
+.parent {
+
+}
+
+.header {
+    background: url(../img/header.jpg);   
+}
+
+.menu {
+
+}
+
+.logo_menu {
+
+}
+
+.nav {
+    background: deepskyblue;
+    padding: 20px;
+}
+
+.social {
+
+
+}
+
+.capçalera {
+
+}
+
+.article{
+    background: ghostwhite;
+    color: gray;
+    padding: 20px;
+}
