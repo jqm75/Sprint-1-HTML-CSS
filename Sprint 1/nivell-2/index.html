@@ -20,11 +20,13 @@
                 </div>
 
                 <nav class="nav">
-                    <a href="#">Inicio</a>
-                    <a href="#">Rutas</a>
-                    <a href="#">Hoteles</a>
-                    <a href="#">Vuelos</a>
-                    <a href="#">Contacto</a>
+                   <!-- Activa el botó Menú 
+                    <button class="nav-button" onclick="accion()">Menú</button> -->
+                    <a href="#" class="nav-link invisible">Inicio</a>
+                    <a href="#" class="nav-link invisible">Rutas</a>
+                    <a href="#" class="nav-link invisible">Hoteles</a>
+                    <a href="#" class="nav-link invisible">Vuelos</a>
+                    <a href="#" class="nav-link invisible">Contacto</a>
                 </nav>
 
                 <div class="social">
@@ -88,5 +90,17 @@
         </section>
     </main>
  
+    <!-- Activa o desactiva el botó MENÚ segons el Media-Query (explicat al video #20 Javascript)
+ 
+    <script>
+     function accion(){
+        var ancla = document.getElementsByClassName ('nav-link');
+        for(var i = 0; <ancla.lenght; i++){
+            ancla[i].classList.toggle('invisible');
+        }
+     }
+ </script>
+-->
+
 </body>
 </html>

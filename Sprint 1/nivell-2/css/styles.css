@@ -44,8 +44,29 @@
     background: ghostwhite;
     color: gray;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .publi {
 
 }
+
+
+/*
+@media (max-width: 600px) {
+    nav {
+
+    }
+    .nav-link {
+        margin: 10px 0;
+    }
+    .nav-button {
+        display: inline-block;
+    }
+
+    .invisible {
+        display: none;
+    }
+}
+
+*/
