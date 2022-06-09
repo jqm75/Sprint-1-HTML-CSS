@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@400;500;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     margin: 5px;
    /* padding: 10px; */
     box-sizing: border-box;
 }
 
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
 .padre {
     display: flex;
     flex-flow: column nowrap;
@@ -11,50 +16,67 @@
 
     .header {
         background: url(../img/header.jpg);
-        display: flex;
         flex-flow: column nowrap;
         background-position: center;
         background-attachment: contain;
         background-size: cover;
+        display: flex;
     }
     /****** MENÚ ******/
         .menu {
-            background: #9EB23B;
+            font-family: 'Roboto Condensed';
+            background: rgba (0,0,0, .1);
             display: flex;
             flex-flow: row nowrap;
-            height: 100px;
             align-items: center;
         }
 
+            .logo {
+                margin: auto;
+                padding: 0px;
+                flex: 1 1 auto;
+                }
+           
+            
             .logo_menu {
                 flex: 1 1 auto;
-                height: 30px;
-            }
-
-            .nav {
-                background: #C7D36F;
-                flex: 5 1 auto;
-                height: 30px;
-            }
-                
-            .nav:hover {
+                width: auto;
                
             }
 
-            .social {
-                background: #FCF9C6;
-                height: 30px;
+            .nav {
+                flex: 5 1 auto;
+                
+            }
+                .nav a {
+                    padding: 0 10px;
+                    text-decoration: none;
+                    color: dimgray;
+                    /* text-transform: uppercase; 
+                    letter-spacing: 2px; */
+                }
+                
 
+
+            .social {
+                display: flex;
+                flex: 1 1 auto;
+            }
+
+            .social a {
+                color: dimgray;
             }
 
     /****** FINAL MENÚ ******/
 
     .text_header {
-        background: #9BA3EB;
+        font-family: 'Roboto Slab';
+	    text-align: center;
+        ;
     
     }
         h1 {
-            background: crimson;
+            color:rgba(240, 128, 128,.6)
         }
 
     .seccion {
