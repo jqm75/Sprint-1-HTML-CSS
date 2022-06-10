@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@400;500;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-    margin: 5px;
-   /* padding: 10px; */
+    margin: 0px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 body {
 	font-family: 'Roboto', Helvetica, sans-serif;
+    margin: auto;
+    max-width: 1200px;
 }
 .padre {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
 }
 
     .header {
@@ -21,14 +27,15 @@ body {
         background-attachment: contain;
         background-size: cover;
         display: flex;
+        margin-bottom: .5em;
     }
     /****** MENÚ ******/
         .menu {
-            font-family: 'Roboto Condensed';
-            background: rgba (0,0,0, .1);
+            font-family: 'Roboto Condensed';    
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            justify-content: center;
         }
 
             .logo {
@@ -38,72 +45,153 @@ body {
                 }
            
             
-            .logo_menu {
+            .logo_img {
+                object-fit: cover;
                 flex: 1 1 auto;
                 width: auto;
+
                
             }
 
             .nav {
                 flex: 5 1 auto;
-                
+                align-self: center;
             }
                 .nav a {
                     padding: 0 10px;
                     text-decoration: none;
-                    color: dimgray;
+                    color: silver;
                     /* text-transform: uppercase; 
                     letter-spacing: 2px; */
                 }
-                
 
+                .nav a:hover {
+                    text-decoration: none;
+                    color: dimgray;
+                }        
 
             .social {
                 display: flex;
                 flex: 1 1 auto;
+                padding: 0 5px;
             }
 
             .social a {
-                color: dimgray;
+                color: silver;
             }
+            .social a:hover {
+                color: dimgray;
+            }  
 
     /****** FINAL MENÚ ******/
 
     .text_header {
         font-family: 'Roboto Slab';
 	    text-align: center;
-        ;
-    
+        background: rgba(0,0,0,.1);
+        /* align-items: center;
+        height: 100px;  */
     }
         h1 {
-            color:rgba(240, 128, 128,.6)
+            color:rgba(240, 128, 128,.6);
+        }
+        
+        .text_header i{
+            font-size: 30px;
         }
 
     .seccion {
-        background: #293462;
+        margin: 0px;
+        background: #dcdcdc;
         display: flex;
     }
 
     .articulos {
-        background: coral;
         flex:2 1 auto;
         display: flex;
         flex-flow: row wrap;
+        /* padding: 4px; */
     }
         .articulo{
-            background: ghostwhite;
-            color: gray;
-            padding: 20px;
-            flex-wrap: wrap;
-            flex: 1 1 40%;
+            flex: 1 1 45%;
+            color: rgb(43, 43, 43);
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0px 0px;
+            background: #f7f7f7;
+        }
+
+        .articulo img{
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .articulo a{
+            color: #fff;
+            font-size: 13px;
+            padding: 10px;
+            background: silver;
+            margin: 10px 0px 0px 10px;
+            display: inline-block;
+            text-decoration: none;
+
+        }
+
+        .articulo a:hover{ /****** TEXTO --> Leer más... ******/
+            background: rgba(240, 128, 128,.6);
+        }
+       
+        h3{
+            font-family: 'Roboto';
+            font-weight: 300;
+            color: rgb(251, 241, 92);
+            font-size: 16px;
+            padding: 15px 0;
+            margin-left: 10px;
+            margin-top: -80px;
+        
+        }
+
+       .articulo h2{
+            display: flex;
+            font-family: 'Roboto Condensed';
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 10px;
+            padding: 10px 0px 0px 10px;
+            color: white;
+            background-color: salmon;  
+            flex: 1 1 auto;          
+        }
+
+        p{
+            font-size: 14px;
         }
 
     .aside {
-        background: #293462;
+        background: #dcdcdc;
         flex:1 1 auto;
     }
+
+        .aside img{
+            width: 100%;
+        }
         .publi {
-            background: #FFE3A9;
+            background: rgb(245, 245, 245);
+        }
+
+        .publi img{
+            background: whitesmoke;
+            margin: 0px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .publi h4{
+            font-size: 14px;
+            color: darkslategray;
+            padding: 5px;
         }
 
     .navegacion {
