@@ -24,13 +24,11 @@ body {
         background: url(../img/header.jpg);
         flex-flow: column nowrap;
         background-position: center;
-        /* background-attachment: contain; */
+        background-attachment: contain;
         background-size: cover;
         display: flex;
         margin-bottom: .5em;
         height: 250px;
-        width: 1160px;
-       
     }
 
     /****** MENÚ ******/
@@ -96,7 +94,8 @@ body {
     }
        h1 {
             padding: 33px 25px 0px 25px;
-            color:rgba(240, 128, 128,.6);         
+            color:rgba(240, 128, 128,.6);
+            
         }
         
         .text_header i{
@@ -116,7 +115,6 @@ body {
         background: green;
         /* padding: 4px; */
     }
-        
         .articulo{
             flex: 1 1 45%;
             color: dimgray;
@@ -153,7 +151,7 @@ body {
             background: rgba(240, 128, 128,.6);
         }
        
-        .articulo h3{
+        h3{
             font-family: 'Roboto';
             font-weight: 300;
             color: rgb(251, 241, 92);
@@ -186,32 +184,24 @@ body {
         flex: 1 1 auto;
         /* padding: 10px 0px 0px 5px; */
         flex-flow: column wrap;
-        margin: 0 auto;
     }
 
         .publi {
             background: rgb(245, 245, 245);
-
-
         }
 
-       .publi h4{
+        .publi h4{
             background-color: black;
             color: white;
             padding: 10px;
-            font-size: 12px;
-        } 
-
-        .publi p{
-            font-size: 12px;
         }
 
-        .aside_img{
+        .publi img{
             background: whitesmoke;
+            margin: 0px;
             padding: 5px;
             width: 100%;
-            height: auto;
-        } 
+        }
 
     .navegacion {
         background: #FFC3C3;
@@ -296,7 +286,7 @@ body {
 }
 
 /* Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) { ... }
 
 /* X-Large devices (large desktops, less than 1400px) */
-/* @media (max-width: 1399.98px) { ... } */
+@media (max-width: 1399.98px) { ... }
