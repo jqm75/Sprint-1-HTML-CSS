@@ -50,7 +50,7 @@ main {
   
 /* CAJA 2 */ 
   .seccion {
-    background: black;
+    background: rgb(36, 36, 36);
     display: flex;
   }
   
@@ -85,7 +85,7 @@ main {
 
  /* CAJA 3 */
   .footer {
-    background: black;
+    background: rgb(36, 36, 36);
     display: flex;
     justify-content: center;
   }

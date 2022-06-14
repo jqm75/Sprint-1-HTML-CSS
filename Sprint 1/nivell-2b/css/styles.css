@@ -14,7 +14,6 @@ main {
   }
 
   /* CAJA 1 */  
-
   .header {
   display: flex;
   flex-flow: row nowrap;
@@ -55,17 +54,23 @@ main {
   }
   
       .articulo {
-      display: flex;
-      background: DarkSlateBlue;
-      flex: 2 1 auto;
-      flex-flow: row wrap;
+        display: flex;
+        background: DarkSlateBlue;
+        flex: 2 1 auto;
+        flex-flow: row wrap;
+
       }
   
           .articulo_item1 {
-          display: flex;
-          background: LightBlue;
-          flex: 1 1 40%;
+            display: flex;
+            background: LightBlue;
+            flex: 1 1 40%;
+
           }
+
+          .articulo_item1 img {
+            width: 100%;
+            }
   
           .articulo_item2 {
           display: flex;
@@ -81,6 +86,10 @@ main {
   
           .publi {
           background: peachpuff;
+          }
+
+          .publi img{
+            width: 100%;
           }
 
  /* CAJA 3 */
