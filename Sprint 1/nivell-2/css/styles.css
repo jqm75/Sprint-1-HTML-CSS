@@ -109,9 +109,10 @@ body {
     }
        h1 {
             padding: 33px 25px 0px 25px;
-            color:rgba(240, 128, 128,.6);
+            color: #ee7463;
             margin-bottom: 43px;
-            bottom:0px;  
+            bottom:0px;
+        
               
         }
         
@@ -170,17 +171,17 @@ body {
         }
 
         .articulo a:hover{ /****** TEXTO --> Leer más... ******/
-            background: rgba(240, 128, 128,.6);
+            background: #ee746390;
         }
        
         .articulo h3{
             font-family: 'Roboto';
             font-weight: 300;
             color: rgb(251, 241, 92);
-            font-size: 16px;
-            padding: 15px 0;
+            font-size: 14px;
+            padding: 15px 0px 5px 0px;
             margin-left: 20px;
-            margin-top: -80px;
+            margin-top: -68px;
         
         }
 
@@ -191,9 +192,9 @@ body {
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 10px;
-            padding: 10px 0px 0px 10px;
+            padding: 10px;
             color: white;
-            background-color: salmon;  
+            background-color: #ee7463;  
             flex: 1 1 auto;          
         }
 
@@ -285,12 +286,12 @@ body {
         align-items: stretch;
     }
 
-/*     .nav i{
-        font-size: 18px;
-    } */
+    .nav a{
+        font-size: 14px;
+    }
 
        h1 {
-            font-size: 1.6em;
+            font-size: 1.3em;
               
         }
         
@@ -330,54 +331,8 @@ body {
         margin-top: .3em;
         width: 100%;
     }
-
-/* .menu {
-    border: 4px;
-    padding: 2px;
-    flex-direction: column;
-    align-items: stretch;
-    } */
-    
-/*     .logo img{
-    width: 3rem;
-    height: auto;
-    } */
-    
-/*     .nav i{
-        font-size: 18px;
-    } */
-    
-
-/*         .header h1 {
-            font-size: 18px;
-            }
-        .header i{
-            font-size: 20px;
-        } */
-    
-/*         .social{
-        display: flex;
-        flex-flow: row wrap;
-        align-self: center;
-        border: 0px;
-        padding: 5px;
-        } */
-
-/*     .seccion {
-        flex-direction: column;
-        } */
-/*     .articulos {
-    flex-direction: column;
-    } */
-/*     .columnas{
-        column-count: 1;
-        width: 100%;
-    } */
-/*     .aside{
-        flex-direction: column;
-    } */
-    
-    }
+   
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -396,6 +351,21 @@ body {
         border: 0px;
         padding: 5px;
     }
+
+    h1 {
+        font-size: 1.6em;
+          
+    }
+    
+    .text_header i{
+        vertical-align: bottom;
+        font-size: 0.8em;
+
+    }
+
+    .seccion {
+        flex-direction: column;
+        }
     
     .columnas{
         column-count: 1;
@@ -410,50 +380,54 @@ body {
          margin-top: .3em;
     }
 
-/*     .articulos {
-        flex-direction: column;
-    }
-
-    .columnas{
-        column-count: 1;
-    }
-
-    .seccion {
-        flex-direction: column;
-    }
-
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-    .aside{
-        display: flex;
-        justify-content: center;
-    } */
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
-
-/*     .logo img{
-        width: 5rem;
-        height: auto;
-        }
-    .columnas{
-        column-count: 1;
+    .menu {
+        border: 4px;
+        padding: 2px;
+        flex-direction: column;
+        align-items: stretch;
     }
+
+    .social{
+        display: flex;
+        flex-flow: row wrap;
+        align-self: center;
+        border: 0px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+          
+    }
+    
+    .text_header i{
+        vertical-align: bottom;
+        font-size: 0.8em;
+
+    }
+
     .seccion {
         flex-direction: column;
-      }
-    
-      .header h1 {
-        font-size: 20px;
         }
-        
-        .header i{
-            font-size: 18px;
-        } */
+    
+    .columnas{
+        column-count: 1;
+        width: 100%;
+    }
+
+    .publi {
+        width: 100%;
+    }
+
+    aside {
+         margin-top: .3em;
+    }
+
 }
 
 
