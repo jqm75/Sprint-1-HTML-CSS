@@ -1,0 +1,20 @@
+/* Variables Personalizadas */
+
+
+
+/* Importar Funciones y Variables */
+@import "../nivell-1/node_modules/bootstrap/scss/_functions";
+@import "../nivell-1/node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors:(
+
+); 
+
+
+/* Importamos Bootstrap */
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
