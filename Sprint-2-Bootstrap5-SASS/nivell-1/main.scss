@@ -1,5 +1,6 @@
 /* Variables Personalizadas */
-
+$primary: #5265E1;
+$secondary: #FA5959;
 
 
 /* Importar Funciones y Variables */
@@ -10,6 +11,7 @@ $custom-theme-colors:(
 
 ); 
 
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 /* Importamos Bootstrap */
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
