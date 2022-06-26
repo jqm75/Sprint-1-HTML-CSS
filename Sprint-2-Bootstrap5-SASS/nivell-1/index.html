@@ -10,34 +10,67 @@
 
 </head>
 <body>
-<!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid text-dark text-uppercase fw-bold">
-          <a class="navbar-brand" href="#"><img src="img/logo-bookmark.svg"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <form class="container-fluid justify-content-start">
-                <button type="button" class="btn btn-secondary text-light text-uppercase fw-bold">Login</button>
-              </form>
+  <section class="header">
+    <div class="header-top-line bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <!-- Navbar Inicio -->
+              <nav class="navbar navbar-expand-lg bg-white navbar-light py-lg-3 px-4 px-lg-5 text-uppercase fw-bold">
+                <a href="index.html" class="navbar-brand p-0" href="#">
+                  <img src="img/logo-bookmark.svg">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+                  <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link active">Features</a>
+                    <a href="#" class="nav-item nav-link">Pricing</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                  </div>
+                    <a href="#" class="btn btn-secondary text-light">Login</a>
+                </div>
+              </nav>
+              <!-- Navbar Fin -->
           </div>
         </div>
-      </nav>
-<!-- fin navbar -->
+      </div>
+    </div>
+  </section>
+      <!-- About Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 wow"">
+              <h1 class="display-5 mb-4">
+                A Simple Bookmark Manager
+              </h1>
+              <p class="mb-4">
+                A clean and simple interface to organize yor favourite websites. Open a new browser tab and see your sites load instatly. Try it for free.
+              </p>
+              <a class="btn btn-primary py-3 px-5 mt-3" href="">Get it on Chrome</a>
+              <a class="btn btn-primary py-3 px-5 mt-3" href="">Get it on Firefox</a>
+            </div>
+            <div class="col-lg-6 wow"">
+              <div class="img-border">
+                <img class="img-fluid" src="img/illustration-hero.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+
+
+
+
+</div>
+
+
 
 <!-- SCRIPT para cargar el JS de Bootstrap 5 -->
-
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- /////////////////////////////////////// -->

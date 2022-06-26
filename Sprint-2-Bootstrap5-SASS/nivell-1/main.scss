@@ -1,20 +1,35 @@
+/* Importar Funciones y Variables */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
 /* Variables Personalizadas */
 $primary: #5265E1;
 $secondary: #FA5959;
 
-
-/* Importar Funciones y Variables */
-@import "../nivell-1/node_modules/bootstrap/scss/_functions";
-@import "../nivell-1/node_modules/bootstrap/scss/_variables";
-
+/* Personalizar colores */
 $custom-theme-colors:(
 
 ); 
 
+/* Fusionar paletas de color */
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-/* Importamos Bootstrap */
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+/* Importamos Bootstrap (en este caso todo Bootstrap) */
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+
 
 
 
